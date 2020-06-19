@@ -3118,7 +3118,7 @@ class Client(object):
 
         resp = self.call('work_validate', payload)
 
-        return resp['valid'] == '1'
+        return resp['valid_all'] == '1'
 
     @doc_metadata(categories=['block'])
     def republish(self, hash, count=None, sources=None, destinations=None):
